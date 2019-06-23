@@ -1,0 +1,21 @@
+*** INSTALLATION ***
+
+1. install composer:
+https://getcomposer.org/download/
+
+2.initialize the composer project (will create composer.json config file):
+composer init
+
+3.install laravel
+composer create-project --prefer-dist laravel/laravel .
+
+4.if you will do DB operations and will want to change table columns
+composer require doctrine/dbal
+
+
+
+/*** CLONING LARAVEL PROJECT ***/
+
+composer install
+cp .env.example .env
+php artisan key:generate
