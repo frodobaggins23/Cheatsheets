@@ -1,0 +1,10 @@
+1.
+npm install --save react react-dom  
+2. Babel - JSX interpreter
+npm install --save-dev @babel/core babel-loader @babel/preset-env @babel/preset-react 
+3. install this in case you want a sass compiler
+npm install --save-dev  sass-loader
+npm install --save-dev  node-sass
+
+use check for webconfig-example.js for configuration of webpack
+

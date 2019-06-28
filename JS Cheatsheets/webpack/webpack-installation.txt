@@ -1,0 +1,32 @@
+-FROM SCRATCH
+create empty folder
+run npm init inside it, can leave all on default
+run npm install webpack webpack-cli --save-dev
+
+-IF YOU HAVE PACKAGE.json
+you just run npm install
+
+-CONFIGURATION of package.json:
+add following to scripts section:
+"build": "webpack -d",
+"watch": "webpack -wd"
+    if you want to compile much smaller JS files production use webpack -p instead
+    "prod": "webpack -p",
+    "watchprod": "webpack -wp"
+
+-CREATE WEBPACK CONFIGURATION
+
+create file webpack.config.js
+    module.exports = {
+
+    entry: './index.js',
+
+    output: {
+
+        path: __dirname,
+
+        filename: 'bundle.js'
+
+    }
+
+    }
